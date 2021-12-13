@@ -20,9 +20,11 @@ const { YleBich } = require("ylebich-js");
 
 const zuriko = new YleBich("Zuriko");
 const iliko = new YleBich("Iliko");
+const temuri = new YleBich("Temuri");
 
 console.log(zuriko.sayMyName());
 console.log(iliko.sayMyName());
+console.log(temuri.sayMyName());
 ```
 
 ## Changelog
@@ -41,5 +43,5 @@ Please make sure to update tests as appropriate.
 
 ## License
 
-Copyright © 2021 [Temuri Takalandze](https://abgeo.dev).  
+Copyright © 2021 [Temuri Takalandze](https://abgeo.dev).
 Released under the [MIT](LICENSE) license.
