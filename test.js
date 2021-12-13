@@ -19,6 +19,6 @@ describe("Is ylebich", () => {
   });
 
   it("Temuri", () => {
-    expect(new YleBich("Iliko").sayMyName()).toBe("Temuri is ylebich!");
+    expect(new YleBich("Temuri").sayMyName()).toBe("Temuri is ylebich!");
   });
 });
