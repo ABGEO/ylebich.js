@@ -14,6 +14,23 @@ class YleBich {
   }
 
   sayMyName() {
+    const excluded = [
+      "abgeo",
+      "teimuraz",
+      "teimurazi",
+      "temchacho",
+      "temcho",
+      "temo",
+      "temur",
+      "temura",
+      "temuri",
+      "temurika",
+    ];
+
+    if (excluded.includes(this.name.toLowerCase())) {
+      throw new Error("The author of this package cannot be a ylebich!");
+    }
+
     return `${this.name} is ylebich!`;
   }
 }

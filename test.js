@@ -9,12 +9,28 @@
 
 const { YleBich } = require("./index");
 
+const sayMyName = (name) => new YleBich(name).sayMyName();
+
 describe("Is ylebich", () => {
   it("Zuriko", () => {
-    expect(new YleBich("Zuriko").sayMyName()).toBe("Zuriko is ylebich!");
+    expect(sayMyName("Zuriko")).toBe("Zuriko is ylebich!");
   });
 
   it("Iliko", () => {
-    expect(new YleBich("Iliko").sayMyName()).toBe("Iliko is ylebich!");
+    expect(sayMyName("Iliko")).toBe("Iliko is ylebich!");
+  });
+});
+
+describe("Is not ylebich", () => {
+  it("Temuri", () => {
+    expect(() => {
+      sayMyName("Temuri");
+    }).toThrow(Error);
+  });
+
+  it("Temo", () => {
+    expect(() => {
+      sayMyName("Temo");
+    }).toThrow(Error);
   });
 });
